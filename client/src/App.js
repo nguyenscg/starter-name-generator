@@ -4,7 +4,7 @@ const App = () => {
   const [name, setName] = useState([])
 
   useEffect(() => {
-    fetch('https://generate-name.onrender.com/')
+    fetch('https://name-generator-l3pr.onrender.com/generate')
       .then((res) => res.json())
       .then((nme) => setName([nme]))
   }, [])
